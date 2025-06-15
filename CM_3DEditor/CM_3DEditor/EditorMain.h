@@ -16,9 +16,9 @@ public:
     ~EditorMain();
 
 private:
-    Ui::EditorMainClass ui;
+    Ui::EditorMainClass* ui;
 
-    ViewerWidget* m_viewer;
-    FileManager* m_fileManager;
-    UIController* m_uiController;
+    ViewerWidget*   m_viewerWidget = nullptr;
+    FileManager*    m_fileManager = nullptr;
+    UIController*   m_uiController = nullptr;
 };

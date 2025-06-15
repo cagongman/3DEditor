@@ -5,12 +5,13 @@
 
 EditorMain::EditorMain(QWidget* parent)
     : QMainWindow(parent),
-    m_viewer(new ViewerWidget(this)),
+    ui(new Ui::EditorMainClass()),
+    m_viewerWidget(new ViewerWidget(this)),
     m_fileManager(new FileManager(this)),
     m_uiController(new UIController(this)) 
 {
-    ui.setupUi(this);
-    setCentralWidget(m_viewer);
+    ui->setupUi(this);
+    setCentralWidget(m_viewerWidget);
 }
 
 EditorMain::~EditorMain()

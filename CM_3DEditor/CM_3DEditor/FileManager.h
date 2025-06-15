@@ -2,6 +2,7 @@
 
 #include <QObject>
 #include <QString>
+#include "Object.h"
 
 class Scene;
 
@@ -14,7 +15,7 @@ public:
  
 private:
     bool parsingPlyToObject(const QString& filePath, Object* obj);
-
-signals:
-    void sceneUpdated();
+//
+//signals:
+//    void sceneUpdated();
 };
